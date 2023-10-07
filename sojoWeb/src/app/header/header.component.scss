@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+header{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.logo-title-container{
+     display: flex;
+     flex-direction: row;
+     width:100%;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+img{
+     width: 107px;
+     height: 146px;
+}
+
+.title{
+     align-content: center;
+     letter-spacing: 2px;
+     font-family: $content-font-family;
+}
