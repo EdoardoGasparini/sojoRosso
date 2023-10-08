@@ -1,22 +1,31 @@
 <header>
-     <div class="logo-title-container">
+     <div class="header">
+     <div class="img-container">
           <img src="../../assets/logo.png" alt="logo del coro che rappresenta il sojo nel momento in cui il sole lo fa sembrare rosso" />
-          <h1 class="title">A.N.A Sojo Rosso</h1>
      </div>
-     <nav>
-          <ul>
-               <li>
-                    <a>Chi siamo</a>
-               </li>
-               <li>
-                    <a>Eventi</a>
-               </li>
-               <li>
-                    <a>Galleria foto</a>
-               </li>
-               <li>
-                    <a>Contatti</a>
-               </li>
-          </ul>
-     </nav>
+     <div class="title-nav-container">
+          <h1 class="title">A.N.A Sojo Rosso</h1>
+          <hr>
+          <nav>
+               <ul>
+                    <li>
+                         <a [routerLink]="''" routerLinkActive="active"
+                         [routerLinkActiveOptions]="{exact: true}">Chi siamo</a>
+                    </li>
+                    <li>
+                         <a [routerLink]="'/eventi'" routerLinkActive="active">Eventi</a>
+                    </li>
+                    <li>
+                         <a [routerLink]="'/galleria'" routerLinkActive="active">Galleria foto</a>
+                    </li>
+                    <li>
+                         <a [routerLink]="'/contatti'" routerLinkActive="active">Contatti</a>
+                    </li>
+               </ul>
+          </nav>
+     </div>
+     <div class="img-container">
+          <img src="../../assets/logo.png" alt="logo del coro che rappresenta il sojo nel momento in cui il sole lo fa sembrare rosso" />
+     </div>
+</div>
 </header>
