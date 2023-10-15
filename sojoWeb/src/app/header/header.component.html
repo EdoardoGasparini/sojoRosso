@@ -1,11 +1,10 @@
 <header>
-     <div class="header">
-     <div class="img-container">
-          <img src="../../assets/logo.png" alt="logo del coro che rappresenta il sojo nel momento in cui il sole lo fa sembrare rosso" />
-     </div>
+     <img src="../../assets/logo.png" 
+     alt="logo del coro che rappresenta il sojo nel momento in cui il sole lo fa sembrare rosso" 
+     [routerLink]="''"  
+     (click)="onImageClicked()"/>
      <div class="title-nav-container">
           <h1 class="title">A.N.A Sojo Rosso</h1>
-          <hr>
           <nav>
                <ul>
                     <li>
@@ -24,8 +23,4 @@
                </ul>
           </nav>
      </div>
-     <div class="img-container">
-          <img src="../../assets/logo.png" alt="logo del coro che rappresenta il sojo nel momento in cui il sole lo fa sembrare rosso" />
-     </div>
-</div>
 </header>
