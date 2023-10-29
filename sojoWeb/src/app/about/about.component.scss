@@ -11,7 +11,7 @@ img{
      height: 450px;
      justify-content: center;
      align-items: center;
-     margin-top: 20px;
+     margin-top: 30px;
      gap: 100px;
 }
 
@@ -144,24 +144,64 @@ img{
 }
 
 //STORY__________________________________________________________________________
-
-.story-container{
-     display:flex;
-     flex-direction: column;
-     width: 100%;
-     justify-content: center;
-     align-items: center;
-     margin-top: 50px;
-}
-
 .story-title{
+     display: flex;
+     flex:1;
+     justify-content: center;
+     margin-top: 30px;
      font-family: $font-title;
      font-weight: 700;
      font-size: 3rem;
      color: #8A0709 ;
 }
-.story-main{
-     font-family: $font-content;
-     font-weight: 500;
-     width: 70%;
+.story-container{
+     display:flex;
+     flex-direction: column;
+     width: 100%;
+     align-items: center;
+     margin-top: 50px;
+     background-color: #F5F5F5 ;
 }
+.story-row{
+     display: flex;
+     width:70%;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     
+}
+span.story{
+     margin-left: 30px;
+     font-family: $font-title;
+     font-weight: 700;
+     font-size: 2.3rem;
+     background-color: #FEDD72;
+     color: #8A0709;
+     width: 95px;
+     height: 95px;
+     line-height: 95px;
+     border: 4px solid #8A0709; 
+     border-radius: 50%;
+     text-align: center;
+}
+p.story{
+     width:70%;
+     font-family: $font-content;
+     font-size: 1.5em;
+     font-weight: 500;
+     background-color: white;
+     border: 4px solid #8A0709;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-radius: 10px;
+}
+
+.align-right{
+     text-align: right;
+}
+
+
+
