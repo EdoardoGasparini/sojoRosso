@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventComponent } from './event/event.component';
+import { AuthComponent } from './auth/auth.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { EventComponent } from './event/event.component';
     AboutComponent,
     GalleryComponent,
     ContactComponent,
-    EventComponent
+    EventComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
