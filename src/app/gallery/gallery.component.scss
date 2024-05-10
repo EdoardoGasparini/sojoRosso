@@ -4,7 +4,7 @@ h1{
      font-size: 2em;
      margin-bottom: 0.7em;
 }
-body{
+.body{
      margin:25px;
      padding:0;
      text-align:center;
@@ -58,7 +58,7 @@ body{
  
  .gallery-item:hover .text{
      opacity:1;
-     animation: move-down .3s linear;
+     //animation: move-down .3s linear;
      padding:1em;
      width:100%;
  }
