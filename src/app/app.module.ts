@@ -8,7 +8,6 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventComponent } from './event/event.component';
-import { AuthComponent } from './auth/auth.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { FormsModule } from '@angular/forms';
     GalleryComponent,
     ContactComponent,
     EventComponent,
-    AuthComponent
   ],
   imports: [
     BrowserModule,
