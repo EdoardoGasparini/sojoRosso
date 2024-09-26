@@ -1,79 +1,44 @@
 @import "../../styles/variables";
-.social-links {
-     background:none;
-   }
-   
-   .social-links a {
-     color: #1d92cf;
-     font-family: $font-content;
-     font-weight: 300;
-     font-size: 1.3rem
-   }
-   
-   .social-links i.fa {
-     font-size: 1.4rem;
-     padding-right: 0.8rem;
-     padding-bottom: 1rem;
-   }
-   
-   @media screen and (max-width: 39.9375em) {
-     .social-links {
-       padding: 2rem 0;
-     }
-     .social-links i.fa {
-       font-size: 2rem;
-       display: block;
-       padding-right: 0;
-       padding-bottom: 0.5rem;
-     }
-     .social-links a {
-       font-weight: bold;
-     }
-     .social-links .columns {
-       margin: 1rem 0;
-     }
-     .social-links .mobile-stack {
-       display: -webkit-flex;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-flex-direction: column;
-           -ms-flex-direction: column;
-               flex-direction: column;
-     }
-   }
-
-
-
-
-
-
+.facebook{
+  color: #0863F7;
+  font-size: 1.3em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.4em;
+  border: 2px solid #0863F7; 
+  border-radius: 50%;
+  text-align: center;
+}
    .story-container{
      display:flex;
      flex-direction: column;
      width: 100%;
-     align-items: center;
-     margin-top: 50px;
-     background-color: #F5F5F5 ;
+     align-items: right;
+     margin-top: 10px;
+     background-color: white ;
+     border-top: 2px solid #8A0709;
      
    }
    .story-row{
      display:flex;
-     width:70%;
-     justify-content: space-between;
-     align-items: center;
-     margin-bottom: 20px;
-     margin-top: 20px;
+     justify-content: flex-start;
+     gap: 1em;
+     align-items: right;
+     margin-bottom: 15px;
+     margin-top: 10px;
+     margin-left: 40px;
  }
  .tooltip{
      font-family: $font-content;
-     font-weight: 300;
-     font-size: 1.3rem;
+     font-weight:350;
+     font-size: 1.2rem;
 }
 
 .tooltip-definition{
+  align-self: center;
      font-family: $font-content;
-     font-weight: 700;
-     font-size: 1.7rem;
+     font-weight: 350;
+     font-size: 1.2rem;
 }
 
 
@@ -81,11 +46,26 @@
   display: flex;
   flex:1;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: $font-title;
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
   color: #8A0709 ;
 }
 
+a{
+  align-self: center;
+  text-decoration: none;
+  color:#8A0709;
+  font-family: $font-content;
+}
+.wrap{
+  overflow: hidden;
+  text-wrap: wrap;
+}
 
+@media screen and (max-width:500px) {
+  .story-row{
+    gap: 0.5em;
+}
+}

@@ -5,9 +5,19 @@ h1{
      margin-bottom: 0.7em;
 }
 .body{
-     margin:25px;
-     padding:0;
-     text-align:center;
+    margin:25px;
+    padding:0;
+    text-align:center;
+}
+     .story-title{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        margin-top: 30px;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 3rem;
+        color: #8A0709 ;
  }
  .container{
      display:grid;
@@ -126,3 +136,8 @@ h1{
          top:15%;
      }
  }
+
+
+
+
+
