@@ -1,71 +1,59 @@
-@import "../../styles/variables";
-.facebook{
-  color: #0863F7;
-  font-size: 1.3em;
-  width: 1.4em;
-  height: 1.4em;
-  line-height: 1.4em;
-  border: 2px solid #0863F7; 
-  border-radius: 50%;
+ @import "../../styles/variables";
+.footer {
+  background-color: #999999 ;
+  color: #fff;
+  padding: 2rem 1rem;
   text-align: center;
-}
-   .story-container{
-     display:flex;
-     flex-direction: column;
-     width: 100%;
-     align-items: right;
-     margin-top: 10px;
-     background-color: white ;
-     border-top: 2px solid #8A0709;
-     
-   }
-   .story-row{
-     display:flex;
-     justify-content: flex-start;
-     gap: 1em;
-     align-items: right;
-     margin-bottom: 15px;
-     margin-top: 10px;
-     margin-left: 40px;
- }
- .tooltip{
-     font-family: $font-content;
-     font-weight:350;
-     font-size: 1.2rem;
-}
+  font-family: Arial, sans-serif;
 
-.tooltip-definition{
-  align-self: center;
-     font-family: $font-content;
-     font-weight: 350;
-     font-size: 1.2rem;
-}
+  .footer-content {
+    max-width: 800px;
+    margin: auto;
 
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #8A0709;
+    }
 
-.story-title{
-  display: flex;
-  flex:1;
-  justify-content: center;
-  margin-top: 10px;
-  font-family: $font-title;
-  font-weight: 500;
-  font-size: 2rem;
-  color: #8A0709 ;
-}
+    .contact-info {
+      margin-bottom: 1.5rem;
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0.3rem 0;
 
-a{
-  align-self: center;
-  text-decoration: none;
-  color:#8A0709;
-  font-family: $font-content;
-}
-.wrap{
-  overflow: hidden;
-  text-wrap: wrap;
-}
+        a {
+          color: #8A0709;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
 
-@media screen and (max-width:500px) {
-  .story-row{
-    gap: 0.5em;
-}
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      a {
+        color:#8A0709;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      color: #444444;
+      margin-top: 1.5rem;
+    }
+  }
 }
