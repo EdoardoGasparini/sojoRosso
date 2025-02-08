@@ -1,91 +1,59 @@
-@import "../../styles/variables";
-.social-links {
-     background:none;
-   }
-   
-   .social-links a {
-     color: #1d92cf;
-     font-family: $font-content;
-     font-weight: 300;
-     font-size: 1.3rem
-   }
-   
-   .social-links i.fa {
-     font-size: 1.4rem;
-     padding-right: 0.8rem;
-     padding-bottom: 1rem;
-   }
-   
-   @media screen and (max-width: 39.9375em) {
-     .social-links {
-       padding: 2rem 0;
-     }
-     .social-links i.fa {
-       font-size: 2rem;
-       display: block;
-       padding-right: 0;
-       padding-bottom: 0.5rem;
-     }
-     .social-links a {
-       font-weight: bold;
-     }
-     .social-links .columns {
-       margin: 1rem 0;
-     }
-     .social-links .mobile-stack {
-       display: -webkit-flex;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-flex-direction: column;
-           -ms-flex-direction: column;
-               flex-direction: column;
-     }
-   }
+ @import "../../styles/variables";
+.footer {
+  background-color: #999999 ;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
 
+  .footer-content {
+    max-width: 800px;
+    margin: auto;
 
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #8A0709;
+    }
 
+    .contact-info {
+      margin-bottom: 1.5rem;
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0.3rem 0;
 
+        a {
+          color: #8A0709;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
 
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
 
-   .story-container{
-     display:flex;
-     flex-direction: column;
-     width: 100%;
-     align-items: center;
-     margin-top: 50px;
-     background-color: #F5F5F5 ;
-     
-   }
-   .story-row{
-     display:flex;
-     width:70%;
-     justify-content: space-between;
-     align-items: center;
-     margin-bottom: 20px;
-     margin-top: 20px;
- }
- .tooltip{
-     font-family: $font-content;
-     font-weight: 300;
-     font-size: 1.3rem;
+      a {
+        color:#8A0709;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      color: #444444;
+      margin-top: 1.5rem;
+    }
+  }
 }
-
-.tooltip-definition{
-     font-family: $font-content;
-     font-weight: 700;
-     font-size: 1.7rem;
-}
-
-
-.story-title{
-  display: flex;
-  flex:1;
-  justify-content: center;
-  margin-top: 30px;
-  font-family: $font-title;
-  font-weight: 700;
-  font-size: 3rem;
-  color: #8A0709 ;
-}
-
-

@@ -146,7 +146,76 @@ img{
      font-size: 1.7rem;
 }
 
-//STORY__________________________________________________________________________
+
+//TIMELINE
+  .timeline {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: #000000;
+  }
+  
+  .timeline__component{
+    margin: 0px 0px 1rem 0px;
+  }
+  .timeline__component--left {
+    margin: 0px 0px 1rem 1rem;
+  }
+  .timeline__component--right {
+    margin: 0px 1rem 1rem 0px;
+  }
+  
+  .timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__component--bottom {
+    margin-bottom: 0;
+  }
+  
+  .timeline__middle {
+    position: relative;
+    background: $lg-about;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #8A0709;
+    border: 4px solid white;
+    border-radius: 50%;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+  }
+  
+  .timeline__date--left{
+    padding-left:1rem;
+    text-align: left;
+  }
+  .timeline__date--right {
+    padding-right:1rem;
+    text-align: right;
+  }  
+  .timeline__paragraph {
+    line-height: 1.5;
+  }
+  
+//STORY vecchia__________________________________________________________________________
 .story-title{
      display: flex;
      flex:1;
@@ -252,7 +321,7 @@ p.story{
      top:50%;
      left:50%;
      transform:translate(-50%,-50%);
-     color: #8A0709;
+     color: white;
      font-size:25px;
      pointer-events:none;
      z-index:4;
